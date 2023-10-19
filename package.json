@@ -1,0 +1,40 @@
+{
+  "name": "express-starter",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon ./bin/www",
+    "scss": "sass --watch public/stylesheets/scss/main.scss public/stylesheets/css/main.css",
+    "start": "node ./bin/www",
+    "gen-models": "sequelize-auto -o './models/schema' -d sys1 -h localhost -p 5432 -e postgres --cf l --sg true -u postgres -x 123123"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "~1.4.4",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "debug": "~2.6.9",
+    "dotenv": "^16.3.1",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-validator": "^7.0.1",
+    "fs": "^0.0.1-security",
+    "http-errors": "~1.6.3",
+    "jquery": "^3.7.1",
+    "jsdom": "^22.1.0",
+    "lodash": "^4.17.21",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.4",
+    "morgan": "^1.10.0",
+    "pg": "^8.11.3",
+    "sequelize": "^6.33.0",
+    "sequelize-auto": "^0.8.8",
+    "sequelize-cli": "^6.6.1"
+  },
+  "devDependencies": {
+    "fakergem": "^2.1.0",
+    "nodemon": "^3.0.1",
+    "sass": "^1.69.4"
+  }
+}
